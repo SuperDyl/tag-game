@@ -8,6 +8,8 @@ execute on attacker run tag @s add tg_tag_in_process
 
 # process tagger
 execute on attacker run team leave @s
+# intentionally clears all tags they have
+execute on attacker run clear @s minecraft:name_tag[minecraft:custom_data={tag_game:1b}]
 
 # process both
 tellraw @a [{"selector":"@p[tag=tg_tag_in_process]","color":"yellow"},{"text":" tagged "},{"selector":"@s"},{"text":"!"}]
