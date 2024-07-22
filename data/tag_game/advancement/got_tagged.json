@@ -1,13 +1,23 @@
 {
     "criteria": {
-        "example": {
+        "tagged": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {
                     "blocked": false,
                     "type": {
                         "source_entity": {
-                            "type": "minecraft:player"
+                            "type": "minecraft:player",
+                            "team": "tg_tagged",
+                            "equipment": {
+                            "mainhand": {
+                                "components": {
+                                    "minecraft:custom_data": {
+                                        "tag_game": 1
+                                    }
+                                }
+                            }
+                        }
                         },
                         "tags": [
                             {"id":"minecraft:is_player_attack", "expected": true}

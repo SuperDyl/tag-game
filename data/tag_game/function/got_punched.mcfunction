@@ -6,8 +6,14 @@
 # setup
 execute on attacker run tag @s add tg_tag_in_process
 
-# process
+# process tagger
+execute on attacker run team leave @s
+
+# process both
 tellraw @a [{"selector":"@p[tag=tg_tag_in_process]","color":"yellow"},{"text":" tagged "},{"selector":"@s"},{"text":"!"}]
+
+# process tagged
+function tag_game:become_tagger
 
 # cleanup
 advancement revoke @s only tag_game:got_tagged
