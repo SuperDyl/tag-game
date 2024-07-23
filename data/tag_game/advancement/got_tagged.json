@@ -10,17 +10,20 @@
                             "type": "minecraft:player",
                             "team": "tg_tagged",
                             "equipment": {
-                            "mainhand": {
-                                "components": {
-                                    "minecraft:custom_data": {
-                                        "tag_game": 1
+                                "mainhand": {
+                                    "components": {
+                                        "minecraft:custom_data": {
+                                            "tag_game": 1
+                                        }
                                     }
                                 }
                             }
-                        }
                         },
                         "tags": [
-                            {"id":"minecraft:is_player_attack", "expected": true}
+                            {
+                                "id": "minecraft:is_player_attack",
+                                "expected": true
+                            }
                         ]
                     }
                 }
@@ -28,6 +31,6 @@
         }
     },
     "rewards": {
-        "function": "tag_game:got_punched"
+        "function": "tag_game:check_tag"
     }
 }
