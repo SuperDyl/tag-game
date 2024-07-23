@@ -3,4 +3,6 @@
 
 scoreboard players operation @s tg_cooldownSeconds = @s tg_tagCooldown
 scoreboard players operation @s tg_cooldownSeconds /= #20 tg_config
-tellraw @s [{"text":"Tag on cooldown! You have ","color":"yellow"},{"score":{"name":"*","objective":"tg_cooldownSeconds"}},{"text":" seconds remaining"}]
+scoreboard players operation #cooldown tg_cooldownSeconds = #cooldown tg_config
+scoreboard players operation #cooldown tg_cooldownSeconds /= #20 tg_config
+tellraw @s [{"text":"Tag on ","color":"yellow"},{"score":{"name":"#cooldown","objective":"tg_cooldownSeconds"}},{"text":" second cooldown! You have "},{"score":{"name":"*","objective":"tg_cooldownSeconds"}},{"text":" seconds remaining"}]
