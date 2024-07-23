@@ -6,8 +6,11 @@
 execute on attacker run tag @s add tg_tagger
 tag @s add tg_tagged
 
-# test cooldown
+# if done with cooldown
 execute if entity @p[tag=tg_tagger,scores={tg_tagCooldown=0}] run function tag_game:swap_tagger
+
+# else still on cooldown
+execute unless entity @p[tag=tg_tagger,scores={tg_tagCooldown=0}] as @a[tag=tg_tagger] run function tag_game:cooldown_message
 
 # cleanup
 tag @s remove tg_tagged
