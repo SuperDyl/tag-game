@@ -7,10 +7,11 @@
 scoreboard objectives add tg_timesTagged dummy "Times Tagged"
 # scoreboard objectives add tg_help trigger "show tag help"
 scoreboard objectives add tg_tagCooldown dummy "Tag Cooldown"
-scoreboard objectives add tg_cooldownSeconds dummy "Tag Cooldown Seconds"
 scoreboard objectives add tg_config dummy "Tag Config"
+scoreboard objectives add tg_temp dummy "Temporary Values"
 
 scoreboard players set #20 tg_config 20
+scoreboard players set #1200 tg_config 1200
 
 team add tg_tagged "Tagged Player"
 team modify tg_tagged color red
