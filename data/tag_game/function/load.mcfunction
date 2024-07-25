@@ -23,6 +23,7 @@ scoreboard players set #tg_version tg_config 1
 
 # ON CREATION
 execute unless score #cooldown tg_config = #cooldown tg_config run scoreboard players set #cooldown tg_config 0
+execute unless score #announceTags tg_config = #announceTags tg_config run scoreboard players set #announceTags tg_config 1
 
 # NOTES
 # scoreboard objectives add tg_taggedId
