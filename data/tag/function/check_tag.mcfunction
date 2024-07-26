@@ -6,11 +6,14 @@
 execute on attacker run tag @s add tg_tagger
 tag @s add tg_tagged
 
-# if done with cooldown
-execute if entity @p[tag=tg_tagger,scores={tg_tagCooldown=0}] run function tag:swap_tagger
+# if done with cooldown AND tagged player isn't afk
+execute if entity @s[team=!afkDis.afk] if entity @p[tag=tg_tagger,scores={tg_tagCooldown=0}] run function tag:swap_tagger
 
-# else still on cooldown
-execute unless entity @p[tag=tg_tagger,scores={tg_tagCooldown=0}] as @a[tag=tg_tagger] run function tag:cooldown_message
+# else still on cooldown AND tagged player isn't afk
+execute if entity @s[team=!afkDis.afk] unless entity @p[tag=tg_tagger,scores={tg_tagCooldown=0}] as @a[tag=tg_tagger] run function tag:cooldown_message
+
+# Tell off other player for hitting an afk player
+execute if entity @s[team=afkDis.afk] on attacker run tellraw @s [{"color":"red","text":"You cannot tag an AFK player!"}]
 
 # cleanup
 tag @s remove tg_tagged
