@@ -15,6 +15,6 @@
         }
     },
     "rewards": {
-        "function": "tag_game:update_tag"
+        "function": "tag:update_tag"
     }
 }

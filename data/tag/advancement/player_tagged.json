@@ -13,7 +13,7 @@
                                 "mainhand": {
                                     "components": {
                                         "minecraft:custom_data": {
-                                            "tag_game": 1
+                                            "tag": 1
                                         }
                                     }
                                 }
@@ -31,6 +31,6 @@
         }
     },
     "rewards": {
-        "function": "tag_game:check_tag"
+        "function": "tag:check_tag"
     }
 }

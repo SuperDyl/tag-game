@@ -18,7 +18,7 @@ team modify tg_tagged color red
 team modify tg_tagged nametagVisibility always
 
 # ON UPDATE
-execute unless score #tg_post_vt tg_config matches 1 run function tag_game:update_1_20
+execute unless score #tg_post_vt tg_config matches 1 run function tag:update_1_20
 scoreboard players set #tg_version tg_config 1
 
 # ON CREATION

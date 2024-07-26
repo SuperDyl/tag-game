@@ -1,5 +1,5 @@
 # Gives a message about the cooldown remaining
-# Run by tag_game:check_tag
+# Run by tag:check_tag
 
 scoreboard players operation #seconds tg_temp = @s tg_tagCooldown
 scoreboard players operation #seconds tg_temp /= #20 tg_config

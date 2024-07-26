@@ -1,5 +1,5 @@
 # Migrates tag data from the Vanilla Tweaks tag to this tag game
-# Run by tag_game:load
+# Run by tag:load
 
 scoreboard objectives remove tg_tagged
 scoreboard objectives remove tg_tagger
