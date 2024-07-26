@@ -22,5 +22,5 @@ execute unless score #tg_post_vt tg_config matches 1 run function tag:update_1_2
 scoreboard players set #tg_version tg_config 1
 
 # ON CREATION
-execute unless score #cooldown tg_config = #cooldown tg_config run scoreboard players set #cooldown tg_config 0
+execute unless score #cooldown tg_config = #cooldown tg_config run scoreboard players set #cooldown tg_config 1200
 execute unless score #announceTags tg_config = #announceTags tg_config run scoreboard players set #announceTags tg_config 1
