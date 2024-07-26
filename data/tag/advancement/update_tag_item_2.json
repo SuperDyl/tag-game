@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "moved_old_tag": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:name_tag",
+                        "components": {
+                            "minecraft:item_name" : "Tag!",
+                            "minecraft:custom_data": {"tag":{"tag":true}}
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "tag:update_tag_2"
+    }
+}

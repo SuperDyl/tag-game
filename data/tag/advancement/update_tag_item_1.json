@@ -7,7 +7,8 @@
                     {
                         "items": "minecraft:name_tag",
                         "components": {
-                            "minecraft:custom_name" : "{'text':'Tag!','color':'yellow','italic':true}"
+                            "minecraft:custom_name": "§r§eTag!§r",
+                            "minecraft:rarity": "common"
                         }
                     }
                 ]
@@ -15,6 +16,6 @@
         }
     },
     "rewards": {
-        "function": "tag:update_tag"
+        "function": "tag:update_tag_1"
     }
 }
