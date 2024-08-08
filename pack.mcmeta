@@ -2,8 +2,8 @@
 	"pack": {
 		"description": [
 			{ "text": "Tag game", "color": "yellow" },
-			{ "text": "v1.0.0", "color": "white" },
-			{ "text": "By SuperDyl", "color": "white" }
+			{ "text": "\nv1.1.0", "color": "white" },
+			{ "text": "\nBy SuperDyl", "color": "white" }
 		],
 		"pack_format": 48
 	}
