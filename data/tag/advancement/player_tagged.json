@@ -8,7 +8,6 @@
                     "type": {
                         "source_entity": {
                             "type": "minecraft:player",
-                            "team": "tg_tagged",
                             "equipment": {
                                 "mainhand": {
                                     "components": {

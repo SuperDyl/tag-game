@@ -81,6 +81,14 @@ I felt were issues with the original pack.
 - When a tagger is still under cooldown, attempting to tag a player will
   show the tagger how long they have left on their cooldown
 
+## Change log
+
+### v1.1.0
+* Taggers are now based on tags instead of the `tg_tagged` team
+  * This means putting a player on a team doesn't make them no longer a tagger
+  * To make a player no longer a tagger, use `/execute as <player> run function tag:become_normal`
+* Uninstall command attempts to remove tag game tags from players (for players who are online)
+
 ## Issues
 
 Please report any issues or change requests on the GitHub repository

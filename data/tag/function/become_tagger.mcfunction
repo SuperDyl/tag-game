@@ -5,5 +5,6 @@
 
 scoreboard players add @s tg_timesTagged 1
 team join tg_tagged @s
+tag @s add tm_tg_tagged
 function tag:spawn_tag
 scoreboard players operation @s tg_tagCooldown = #cooldown tg_config

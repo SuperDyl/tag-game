@@ -3,7 +3,7 @@
 # Run from the advancement tag:swap_tagger
 
 # setup
-execute on attacker run tag @s add tg_tagger
+execute on attacker if entity @s[tag=tm_tg_tagged] run tag @s add tg_tagger
 tag @s add tg_tagged
 
 # if done with cooldown AND tagged player isn't afk
