@@ -30,12 +30,26 @@ Just like the Vanilla Tweaks version,
 this pack also doesn't allow players to tag AFK players,
 if a player is marked AFK by the Vanilla Tweaks AFK Display pack.
 
+## Detect AFK Players Compatible
+
+This pack will not allow players to tag AFK players
+from the Detect AFK Players datapack.
+It should treat these players the same it treats players marked
+AFK by the Vanilla Tweaks AFK Display datapack.
+
 ## Usage Guide
 
 To add someone to the tagger's team and give them a tag,
 an admin can use the command `/execute as <playername> run function tag:become_tagger`
 
+To make someone no longer a tagger (and take away their tag),
+an admin can use the command `/execute as <playername> run function tag:become_normal`
+
 An admin can create a new tag at anytime by using the command `function tag:spawn_tag`
+
+As long as a player is a tagger, they will have a red name.
+This only works if the player isn't on another team.
+Every 5 seconds, the game will give all taggers who aren't on a team back their red name.
 
 The pack keeps track of how many times each player has been tagged.
 An admin can display it under player names with the command
@@ -91,6 +105,8 @@ I felt were issues with the original pack.
   * To make a player no longer a tagger, use `/execute as <player> run function tag:become_normal`
   * If a tagger has no team, they are occasionally added back to the `tg_tagged` team (to give them the red name)
 * Uninstall command attempts to remove tag game tags from players (for players who are online)
+* Added support for the Detect AFK Players datapack
+  * Players marked AFK by this datapack also cannot be tagged
 
 ## Issues
 
