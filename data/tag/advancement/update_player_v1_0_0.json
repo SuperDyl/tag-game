@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "hasnt_been_updated": {
+            "trigger": "minecraft:location"
+        }
+    },
+    "rewards": {
+        "function": "tag:update_player_v1_0_0"
+    }
+}
