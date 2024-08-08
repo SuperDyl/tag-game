@@ -80,13 +80,16 @@ I felt were issues with the original pack.
 - Only the admin can change settings for the cooldown and tag announcements
 - When a tagger is still under cooldown, attempting to tag a player will
   show the tagger how long they have left on their cooldown
+- A tagger cannot become a normal player by swapping/removing their team
+  - Instead, an admin must call `/execute as <player> run function tag:become_normal`
 
 ## Change log
 
 ### v1.1.0
 * Taggers are now based on tags instead of the `tg_tagged` team
-  * This means putting a player on a team doesn't make them no longer a tagger
+  * This means putting the tagger on a different team leaves them still as a tagger
   * To make a player no longer a tagger, use `/execute as <player> run function tag:become_normal`
+  * If a tagger has no team, they are occasionally added back to the `tg_tagged` team (to give them the red name)
 * Uninstall command attempts to remove tag game tags from players (for players who are online)
 
 ## Issues

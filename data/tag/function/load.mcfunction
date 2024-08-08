@@ -17,6 +17,8 @@ team add tg_tagged "Tagged Player"
 team modify tg_tagged color red
 team modify tg_tagged nametagVisibility always
 
+schedule function #tag:periodically 1t replace
+
 # ON UPDATE
 execute unless score #tg_post_vt tg_config matches 1 run function tag:update_1_20
 scoreboard players set #tg_version tg_config 1
