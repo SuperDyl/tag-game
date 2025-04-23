@@ -2,9 +2,24 @@
 	"pack": {
 		"description": [
 			{ "text": "Tag game", "color": "yellow" },
-			{ "text": "\nv1.1.1", "color": "white" },
+			{ "text": "\nv1.2.0", "color": "white" },
 			{ "text": "\nBy SuperDyl", "color": "white" }
 		],
-		"pack_format": 61
+		"pack_format": 71,
+		"supported_formats": {
+			"min_inclusive": 48,
+			"max_inclusive": 71
+		}
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "overlay-1.21-1.21.4",
+				"formats": {
+					"min_inclusive": 1,
+					"max_inclusive": 61
+				}
+			}
+		]
 	}
 }
