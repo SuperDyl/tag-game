@@ -1,7 +1,7 @@
 # Sets up scoreboards/teams and updates any old data
 # Runs on load/reload
 
-# EVERYTIME
+# EVERY TIME
 
 # Kept from old tag
 scoreboard objectives add tg_timesTagged dummy "Times Tagged"

@@ -1,5 +1,5 @@
 # Checks if the current player was just tagged
-# by somone who's tg_tagCooldown is 0
+# by someone who's tg_tagCooldown is 0
 # Run from the advancement tag:swap_tagger
 
 # setup
