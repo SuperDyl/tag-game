@@ -29,7 +29,7 @@ jobs:
           version: ${{ github.event.release.tag_name }}
           changelog: ${{ github.event.release.body }}
           loaders: |-
-            minecraft
+            datapack
           game-versions: |-
             1.21
             1.21.1
