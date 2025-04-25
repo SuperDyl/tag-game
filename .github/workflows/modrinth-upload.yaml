@@ -23,13 +23,13 @@ jobs:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project: 8ZiCD9vV
           featured: true
-          status: draft
+          status: listed
           channel: release
           name: ${{ github.event.release.name }}
           version: ${{ github.event.release.tag_name }}
           changelog: ${{ github.event.release.body }}
           loaders: |-
-            data pack
+            minecraft
           game-versions: |-
             1.21
             1.21.1
