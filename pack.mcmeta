@@ -2,13 +2,13 @@
 	"pack": {
 		"description": [
 			{ "text": "Tag game", "color": "green" },
-			{ "text": "\nv1.2.3", "color": "white" },
+			{ "text": "\nv1.2.4", "color": "white" },
 			{ "text": "\nBy SuperDyl", "color": "white" }
 		],
-		"pack_format": 80,
+		"pack_format": 81,
 		"supported_formats": {
 			"min_inclusive": 48,
-			"max_inclusive": 80
+			"max_inclusive": 81
 		}
 	},
 	"overlays": {
