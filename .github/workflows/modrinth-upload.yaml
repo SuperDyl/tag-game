@@ -32,7 +32,6 @@ jobs:
             datapack
           game-versions: |-
             1.21.X
-            26.1
-            26.1.1
-            26.1.2
+            26.1.X
+            26.2
           files: ${{ github.event.release.name }}.zip

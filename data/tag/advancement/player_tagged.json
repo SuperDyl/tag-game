@@ -7,7 +7,7 @@
                     "blocked": false,
                     "type": {
                         "source_entity": {
-                            "type": "minecraft:player",
+                            "entity_type": "minecraft:player",
                             "equipment": {
                                 "mainhand": {
                                     "components": {
