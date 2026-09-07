@@ -2,16 +2,16 @@
 	"pack": {
 		"description": [
 			{ "text": "Tag game", "color": "green" },
-			{ "text": "\nv1.3.0", "color": "white" },
+			{ "text": "\nv1.4.0", "color": "white" },
 			{ "text": "\nBy SuperDyl", "color": "white" }
 		],
-		"pack_format": 102,
+		"pack_format": 120,
 		"supported_formats": {
 			"min_inclusive": 48,
-			"max_inclusive": 102
+			"max_inclusive": 121
 		},
 		"min_format": 48,
-		"max_format": 102
+		"max_format": 121
 	},
 	"overlays": {
 		"entries": [
@@ -30,6 +30,15 @@
 				},
 				"min_format": 1,
 				"max_format": [101, 2]
+			},
+			{
+				"directory": "overlay-26.1.2-26.2",
+				"formats": {
+					"min_inclusive": 102,
+					"max_inclusive": 109
+				},
+				"min_format": 102,
+				"max_format": 109
 			}
 		]
 	}

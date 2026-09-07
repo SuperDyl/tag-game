@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "tagged": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": false,
+                    "type": {
+                        "source_entity": {
+                            "entity_type": "minecraft:player",
+                            "equipment": {
+                                "mainhand": {
+                                    "components": {
+                                        "minecraft:custom_data": {
+                                            "tag": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "tags": [
+                            {
+                                "id": "minecraft:is_player_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tag:check_tag"
+    }
+}

@@ -34,4 +34,5 @@ jobs:
             1.21.X
             26.1.X
             26.2
+            26.3
           files: ${{ github.event.release.name }}.zip
